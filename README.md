@@ -6,7 +6,6 @@ Simple OS for learning
 
 Please read my article (written in Indonesia language), http://blog.aguskurniawan.net/post/Membuat-Sistem-Operasi-Sederhana.aspx
 
-
 ## License
 
 The MIT License (MIT)
@@ -30,6 +29,29 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/agusk/sirsak/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+## Buat debugging pakai GDB
+
+Jalanin qemunya dengan cara:
+
+```shell
+make qemu
+```
+
+Jalanin di gdb:
+
+```
+target remote: 1234
+continue
+```
+
+Hei, jangan lupa pasang breakpoint sebelum pencet continue yaah.
+
+Fyi, kamu bisa juga looh pasang breakpoint kayak gini:
+
+```
+b src/kernel.c:4
+```
+
+Artinya pasang breakpoint di src/kernel.c di baris ke 4

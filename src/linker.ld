@@ -1,8 +1,10 @@
 ENTRY(loader)
 SECTIONS {
 
-	. = 0x00100000;
-	.text : {
+	. = 1M;
+	.text : 
+  {
+    *(.multiboot)
 		*(.text)
 	}
 	.rodata ALIGN (0x1000):{
