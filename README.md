@@ -53,6 +53,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 - xorriso
 - gdb
 
+Install semuanya dengan sebuah perintah:
+```sh
+./install.sh
+```
+
 ## Buat debugging pakai GDB
 
 Jalanin qemunya dengan cara:
