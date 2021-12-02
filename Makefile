@@ -6,6 +6,9 @@ CFLAG = -Wall -Wextra -m32 -ffreestanding
 SFLAG = -m32
 LINKER = ./src/linker.ld
 
+# Location
+BINISO_BUILD = ./build/iso
+
 # Compile assembly file
 ./build/%.o: ./src/%.s
 	@mkdir -p $(dir $@)
@@ -29,7 +32,19 @@ clear:
 build: ./bin/oskuh.bin
 clean: clear
 
-qemu:
+debug-qemu:
 	@qemu-system-i386 -kernel bin/oskuh.bin -s -S
 
-.PHONY: clear clean build qemu
+qemu:
+	@qemu-system-i386 -kernel bin/oskuh.bin
+
+run: build qemu
+
+build-iso: build
+	@mkdir -p dist
+	@mkdir -p $(BINISO_BUILD)/boot/grub
+	@cp bin/oskuh.bin $(BINISO_BUILD)/boot/oskuh.bin
+	@cp src/grub.cfg $(BINISO_BUILD)/boot/grub/grub.cfg
+	@grub-mkrescue -o dist/oskuh.iso $(BINISO_BUILD)
+
+.PHONY: clear clean build qemu build-iso debug-qemu run

@@ -6,7 +6,8 @@ void kmain(unsigned int magic) {
     print("Error loading!!", 0x04);
   } else {
     clear();
-    print("Halo dunia, Apa kabarnya?", 0x04);
+    print("Halo dunia, Apa kabarnya?", 0xf);
+    print("Haii", 0xf);
   }
 }
 

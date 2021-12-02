@@ -31,12 +31,22 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/agusk/sirsak/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+## Requiremets
+
+- GCC Mulitilib
+- GCC
+
+Build jadi iso:
+
+- mtools
+- xorriso
+
 ## Buat debugging pakai GDB
 
 Jalanin qemunya dengan cara:
 
 ```shell
-make qemu
+make debug-qemu
 ```
 
 Jalanin di gdb:
