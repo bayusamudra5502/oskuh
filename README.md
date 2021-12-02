@@ -1,10 +1,24 @@
-## Sirsak
+## Sirsak - Oskuh
 
-Simple OS for learning
+Simple OS for learning. Forked from agusk/sirsak. 
+
+Modifikasian dari OS-nya bapak Agus K.
 
 ## Usage
 
-Please read my article (written in Indonesia language), http://blog.aguskurniawan.net/post/Membuat-Sistem-Operasi-Sederhana.aspx
+Please read my article (written in Indonesia language), http://blog.aguskurniawan.net/post/Membuat-Sistem-Operasi-Sederhana.aspx.
+
+Berdasarkan modifikasi, untuk build bisa jalankan saja
+```shell
+make build
+```
+
+Untuk membuat iso file cukup jalankan
+```shell
+make build-iso
+```
+
+Pastikan sudah menginstall requirements yaa.
 
 ## License
 
@@ -31,6 +45,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Requiremets
 
+- qemu-system
 - GCC Mulitilib
 - GCC
 
