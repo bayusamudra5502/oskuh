@@ -48,11 +48,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 - qemu-system
 - GCC Mulitilib
 - GCC
-
-Build jadi iso:
-
 - mtools
 - xorriso
+- gdb
 
 ## Buat debugging pakai GDB
 
