@@ -1,4 +1,4 @@
-CC = gcc
+CC = .builder/i386-linux/bin/i386-linux-gcc
 
 # FLAGS
 LFLAG = -ffreestanding -O0 -nostdlib -lgcc -m32 -g
