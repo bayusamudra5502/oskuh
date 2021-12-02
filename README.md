@@ -54,4 +54,4 @@ Fyi, kamu bisa juga looh pasang breakpoint kayak gini:
 b src/kernel.c:4
 ```
 
-Artinya pasang breakpoint di src/kernel.c di baris ke 4
+Artinya pasang breakpoint di src/kernel.c di baris ke 4. Selamat Mencoba :D.
