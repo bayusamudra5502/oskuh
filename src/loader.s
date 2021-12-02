@@ -35,4 +35,3 @@ loader:
 hang:
   hlt
   jmp hang
-
